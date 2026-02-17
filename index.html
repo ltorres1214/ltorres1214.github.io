@@ -1,1 +1,63 @@
-My name is Linda Torres and I am a student at Siena University!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linda Torres | Portfolio</title>
+    
+    <style>
+       
+        body {
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        .fade-in-bottom {
+            -webkit-animation: fade-in-bottom 800ms ease-out both;
+                    animation: fade-in-bottom 800ms ease-out both;
+            font-size: 2rem;
+            text-align: center;
+            color: #333;
+        }
+
+        /* Your Animista Keyframes */
+        @-webkit-keyframes fade-in-bottom {
+            0% {
+                -webkit-transform: translateY(50px);
+                        transform: translateY(50px);
+                opacity: 0;
+            }
+            100% {
+                -webkit-transform: translateY(0);
+                        transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fade-in-bottom {
+            0% {
+                -webkit-transform: translateY(50px);
+                        transform: translateY(50px);
+                opacity: 0;
+            }
+            100% {
+                -webkit-transform: translateY(0);
+                        transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1 class="fade-in-bottom">
+        My name is Linda Torres and I am a student at Siena University!
+    </h1>
+
+</body>
+</html>
