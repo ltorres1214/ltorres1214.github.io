@@ -10,18 +10,17 @@
   --border-width: 1px;
 
   /* Default (light) theme */
-  --bg: #fff;
-  --accent-bg: #f5f7ff;
-  --text: #212121;
-  --text-light: #585858;
-  --border: #898EA4;
-  --accent: #450887;
-  --accent-hover: #1266e2;
-  --accent-text: var(--bg);
-  --code: #d81b60;
-  --preformatted: #444;
-  --marked: #ffdd33;
-  --disabled: #efefef;
+  color-scheme: dark;
+    --bg: #A67F8E;
+    --accent-bg:#a15f78;
+    --text: #dcdcdc;
+    --text-light:#4d3c38;
+    --accent: #2C1A1D;
+    --accent-hover: #655959;
+    --accent-text: var(--bg);
+    --code: #f06292;
+    --preformatted: #0a0909;
+    --disabled: #000000;
 }
 
 /* Dark theme */
@@ -29,15 +28,15 @@
   :root {
     color-scheme: dark;
     --bg: #A67F8E;
-    --accent-bg:#A67F8E;
+    --accent-bg:#a15f78;
     --text: #dcdcdc;
     --text-light:#4d3c38;
     --accent: #2C1A1D;
-    --accent-hover: #b8144b;
+    --accent-hover: #655959;
     --accent-text: var(--bg);
     --code: #f06292;
-    --preformatted: #ccc;
-    --disabled: #111;
+    --preformatted: #0a0909;
+    --disabled: #000000;
   }
   /* Add a bit of transparency so light media isn't so glaring in dark mode */
   img,
