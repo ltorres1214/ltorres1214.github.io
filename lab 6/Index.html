@@ -7,17 +7,29 @@
    
 </head>
 <body>
+    <form id="siena form"></form>
     <label for="siena email"> Siena University Email:</label>
     <input 
     type="email"
     placeholder="Enter your Siena Email"
-     >
+    required
+    pattern=".+@siena\.edu"
+    tittle=" Please enter a valid Siena University email ending with @siena.edu"
+    >
 
     <label for="Id number">Siena ID:</label>
     <input
-    type="id number"
-    placeholder="Enter your Siena ID">
+    type="text"
+    placeholder="Enter your Siena ID"
+    required
+    pattern="98\d{6}"
+    title="Siena ID must be 8 digits starting with 98"
+    >
 
-    <button type="submit"> Submit </button>
+    <button type="submit">Submit</button>
+    </form>
+
+    <script src="script.js" defer></script>
+
 </body>
 </html>

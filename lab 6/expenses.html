@@ -1,4 +1,4 @@
-  <!--<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,31 +7,99 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 <body>
-    <label for="expense place">Place of expense:</label>
-    <input type="placeholder">
+  <main class="container mt-4">
+    <h2> Add Expenses</h2>
+    <form id="expenses form">
+   
+      <div class="mb-3">  
+      <label for="expense place">Place of expense:</label>
+    <input 
+    type="text"
+    id="expense place"
+    class="fomr-control"
+    placeholder="Enter place of expense"
+    required
+    minlength="5"
+    title="Place must be at least 5 characters"
+    >
+     </div>
+    
+     <div class="mb-3">  
+     <label for="expenses date" class="form-label"> Expenses Date:</label>
+     <input
+     type="date"
+     id="expenses date"
+     class="fomr-control"
+     required
+     >
+   </div>
 
-    <label><p>Expense category</p></label>
-  
-       <div>
-         <input type="checkbox" id="category" name="groceries"/>
-        <label for="groceries">Groceries</label>
+       <div class="mb-3">
+        <label for="expenses amount" class="form-label">Expense Amount:</label>
+         <input 
+         type="number" 
+         id="expesne amount" 
+         class="fomr-control"
+         placeholder="Enter amount"
+         required
+         min="0.01"
+         max="50000"
+         step="0.01"
+         title="Amount must be between $0 and $50,000"
+         >
         </div>
      
-        <div></div>
-        <input type="checkbox" id="category" name="business"/>
+        <div class="mb-3">
+          <label class="form'label"> Expense Category:</label>
+
+          <div>
+        <input type="checkbox" id="groceries" name="category" value="groceries">
+        <label for="groceries">Groceries</label>
+        </div>
+
+        <div>
+        <input type="checkbox" id="business" name="category" value="business">
         <label for="business">Business</label>
         </div>
 
         <div>
-        <input type="checkbox" id="category" name="restaurants" />
+        <input type="checkbox" id="restaurants" name="category" value="restaurants">
         <label for="restaurants">Restaurants</label>
         </div>
 
-        <input type="checkbox" id="category" name="bills"/>
-        <label for="bills"> Bills</label>
-     
+        <div>
+        <input type="checkbox" id="fun" name="category" value="fun">
+        <label for="fun">Fun</label>
+        </div>
+    </div>
+        
+    <div class="mb-3">
+      <label for="payment mode" class="form-label">Mode of Payment:</label>
+      <select id="payment mode" name="payment mode" class="form-select" required>
+        <option value="">Select Payment Mode</option>
+        <option value="credit">Credit Card</option>
+        <option value="debit"> Debit Card</option>
+        <option value="cash"> Cash</option>
+      </select>
+    </div>
 
+    <div class="mb-3">
+      <label for="rationale" class="form-label">Rationale (optional):</label>
+      <textarea 
+      id="rationale"
+      class="fomr-control"
+      placeholder="Explain Expense..."
+      maxlength="100"
+      rows="3"
+      ></textarea>
+    </div>
 
+    <button type="submit" class="button">Submit</button>
+
+</form>
+</main>
+
+<script src="expenses.js" defer></script>
 
 </body>
 </html>   
