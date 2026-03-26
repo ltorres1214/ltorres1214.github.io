@@ -8,5 +8,24 @@ document.getElementById("expenses form").addEventListener("submit", function(e){
     const rationale = document.getElementById("rationale").value;
 
     const today = new Date();
-    
+    const selectDate = new Date(expenseDate);
+    if (selectedDate >= today) {
+        alert("Expense date must be before today.");
+        return;
+    }
+
+    const checkboxes = document.querySelectorAll('input[name="category"]:checked');
+    if (checkboxes.legnth === 0) {
+        alert("please select at least one expense category.");
+        return;
+    }
+
+    console.log("Expense submitted successfully!");
+     console.log("Place:", expensePlace);
+      console.log("Date:", expenseDate);
+       console.log("Amount:", expenseAmount);
+        console.log("Payment Mode:", paymentMode);
+         console.log("Rationale:", rationale);
+
+
 })
