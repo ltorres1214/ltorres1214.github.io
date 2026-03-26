@@ -4,46 +4,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>income page</title>
+    <title>Income page</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
 </head>
 
 <body>
+    <main class="container mt-4">
     <h2> Add Income </h2>
-    <form id="income form"></form>
-    <label for="source name">Income source name:</label>
+   <form id="incomeForm">
+
+    <div class="mb-3">
+    <label for="sourcename" class="form-label">Income source name:</label>
     <input 
     type="text"
-    id="source name"
+    id="sourcename"
+    class="form-control"
     placeholder="Enter income source"
     required
     minlength="3"
     title="must be at least 3 characters"
     >
+</div>
 
-    <label for="amount">Amount:</label>
+<div class="mb-3">
+    <label for="amount" class="form-label">Amount:</label>
     <input 
-    type="income amount"
+    type="number"
     id="amount"
+     class="form-control"
     placeholder="Enter amount"
     required
     min="0.01"
     step="0.01"
     title="Amount must be greater than 0"
     >
+</div>
 
-    <label for="frequency">Frequency:</label>
-    <select id="frequency" select name="frequency" required>
+<div class="mb-3">
+    <label for="frequency" class="form-label">Frequency:</label>
+    <select id="frequency"  name="frequency"  class="form-select" required>
+        <option value=""> Select Frequency</option>
         <option value="once">One-time</option>
         <option value="biweekly">Bi-Weekly</option>
         <option value="Monthly">Monthly</option>
         <option value="yearly">Yearly</option>
     </select>
+</div>
 
-    <button type="submit">Submit</button>
+    <button type="submit" class="btn btn-primary">Submit</button>
     </form>
-
+</main>
 </body>
 
 </html>

@@ -9,14 +9,14 @@
 <body>
   <main class="container mt-4">
     <h2> Add Expenses</h2>
-    <form id="expenses form">
+    <form id="expenseForm">
    
       <div class="mb-3">  
-      <label for="expense place">Place of expense:</label>
+      <label for="expensePlace" class="form-label">Place of expense:</label>
     <input 
     type="text"
-    id="expense place"
-    class="fomr-control"
+    id="expensePlace"
+    class="form-control"
     placeholder="Enter place of expense"
     required
     minlength="5"
@@ -25,21 +25,21 @@
      </div>
     
      <div class="mb-3">  
-     <label for="expenses date" class="form-label"> Expenses Date:</label>
+     <label for="expenseDate" class="form-label"> Expenses Date:</label>
      <input
      type="date"
-     id="expenses date"
-     class="fomr-control"
+     id="expenseDate"
+     class="form-control"
      required
      >
    </div>
 
        <div class="mb-3">
-        <label for="expenses amount" class="form-label">Expense Amount:</label>
+        <label for="expenseAmount" class="form-label">Expense Amount:</label>
          <input 
          type="number" 
-         id="expesne amount" 
-         class="fomr-control"
+         id="expenseAmount" 
+         class="form-control"
          placeholder="Enter amount"
          required
          min="0.01"
@@ -50,7 +50,7 @@
         </div>
      
         <div class="mb-3">
-          <label class="form'label"> Expense Category:</label>
+          <label class="form-label"> Expense Category:</label>
 
           <div>
         <input type="checkbox" id="groceries" name="category" value="groceries">
@@ -74,8 +74,8 @@
     </div>
         
     <div class="mb-3">
-      <label for="payment mode" class="form-label">Mode of Payment:</label>
-      <select id="payment mode" name="payment mode" class="form-select" required>
+      <label for="paymentMode" class="form-label">Mode of Payment:</label>
+      <select id="paymentMode" name="paymentMode" class="form-select" required>
         <option value="">Select Payment Mode</option>
         <option value="credit">Credit Card</option>
         <option value="debit"> Debit Card</option>
@@ -87,14 +87,14 @@
       <label for="rationale" class="form-label">Rationale (optional):</label>
       <textarea 
       id="rationale"
-      class="fomr-control"
+      class="form-control"
       placeholder="Explain Expense..."
       maxlength="100"
       rows="3"
       ></textarea>
     </div>
 
-    <button type="submit" class="button">Submit</button>
+    <button type="submit" class="btn btn-primary">Submit</button>
 
 </form>
 </main>
