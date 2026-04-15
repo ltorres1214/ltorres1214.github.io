@@ -2,6 +2,10 @@ body {
     font-family: Arial, sans-serif;
     text-align: center;
     padding: 20px;
+     background-color: #374f2f;
+     text-emphasis-color: #374f2f;
+   color: rgb(255, 255, 255);
+
 }
 .container {
     max-width: 600px;
@@ -33,6 +37,7 @@ select {
     font-family: Arial, sans-serif;
     text-align: center;
     padding: 20px;
+     
 }
 .container {
     max-width: 600px;
@@ -40,6 +45,7 @@ select {
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 10px;
+    
 }
 .character {
     padding: 10px;
@@ -52,7 +58,7 @@ label {
 }
 input[type=submit],
 button {
-    background-color: #b11ca0;
+    background-color: #22311D;
     color: white;
     padding: 10px 20px;
     border: none;
