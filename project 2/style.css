@@ -73,11 +73,11 @@ button:hover {
 .stealth-option {
     padding: 10px;
     margin: 5px 0;
-    background-color: #f0f0f0;
+    background-color:#351F37;
     cursor: pointer;
     border: 2px solid #ddd;
     text-align: center;
 }
 .stealth-option:hover {
-    background-color: #e8e8e8;
+    background-color: #7945c8;
 }

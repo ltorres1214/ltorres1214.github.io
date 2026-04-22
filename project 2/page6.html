@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Final Showdown</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="container">
+       <h1>The Final Showdown</h1>
+<p>After a long journey filled with trials and challenges, you finally stand before Malakar's lair. The dark sorcerer awaits, the Crystal of Wisdom in his grasp. It's time to make your move.</p>
+
+<form method="get" action="page7.html">
+    <fieldset>
+        <legend>How will you confront Malakar?</legend>
+        <label for="finalChoice">Choose wisely:</label>
+        <select id="finalChoice" name="finalChoice" required>
+            <option value="">--Please choose an option--</option>
+            <option value="attack">Attack head-on with full force</option>
+            <option value="negotiate">Negotiate with Malakar</option>
+            <option value="trick">Use a clever trick to outsmart him</option>
+        </select>
+    </fieldset>
+
+    <fieldset>
+        <legend>Charater Information</legend>
+
+        <fieldset> 
+            <legend>The Brave</legend>
+            <label for="playerName">Your Name:</label>
+            <input type="text" id="playerName" name="playerName">
+        </fieldset>
+
+        <fieldset>
+            <legend>Select Your Weapon:</legend>
+            <input type="radio" id="sword" name="weapon" value="sword">
+            <label for="sword">Sword</label>
+              <input type="radio" id="sword" name="weapon" value="bow">
+            <label for="bow">Bow</label>
+              <input type="radio" id="sword" name="weapon" value="staff">
+            <label for="staff">Staff</label>
+        </fieldset> 
+
+        <fieldset>
+            <legend>Select Your Weapon:</legend>
+            <input type="checkbox" id="plateArmor" name="armor" value="plateArmor">
+            <label for="plateArmor">Plate Armor</label>
+        </fieldset>
+
+    </fieldset>
+</form>
+
+    </section>
+</body>
+</html>
